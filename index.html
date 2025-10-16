@@ -13,12 +13,16 @@
       <nav>
         <p class="muted">Hi, I'm <span id="name" class="typing"></span></p>
         <div style="display:flex;gap:14px;align-items:center">
-          <button class="hamburger" aria-label="menu" style="display:none;padding:8px;border-radius:8px;border:0;background:transparent">☰</button>
+          <button class="hamburger" aria-label="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
         <div class="navlinks">
           <a href="#home">Home</a>
-          <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#about">About</a>
           <a href="#contact">Contact</a>
           <button id="themeToggle" class="btn btn-ghost">🌙</button>
         </div>
@@ -31,7 +35,7 @@
     <section id="home" class="hero fade-up">
       <div class="hero-left">
         <h1><span id="role" class="role-fade">Web Development</span></h1>
-        <p class="muted">IT Student • Passionate about mobile & web development • Fast learner • Adaptable • Hard worker • Proactive & on time</p>
+        <p class="muted">Information Technology Student • Passionate • Fast and Eager to learn • Adaptable • Proactive</p>
         <div style="margin-top:16px;display:flex;gap:12px">
           <a class="btn btn-primary" href="#contact">Hire Me</a>
           <a class="btn btn-ghost" href="#projects">View Project</a>
@@ -42,63 +46,7 @@
           <a class="tag" href="https://github.com/Kenychee">GitHub</a>
           <a class="tag" href="https://www.linkedin.com/in/khenichi-kuolimpo-19067838a/">LinkedIn</a>
         </div>
-      </div>
 
-      <aside class="hero-right profile-card">
-        <img src="Assets/WhatsApp Image 2025-10-14 at 11.25.08 PM.jpeg" alt="Profil" style="border-radius:8px;margin-bottom:10px">
-        <h3>Khenichi Kuolimpo</h3>
-        <div style="display:flex;gap:10px;margin-top:12px">
-          <div style="text-align:center">
-            <div style="font-weight:700">2+</div>
-            <div class="muted">Projects</div>
-          </div>
-          <div style="text-align:center">
-            <div style="font-weight:700">3 Season</div>
-            <div class="muted">Experience</div>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <!-- About me -->
-    <section id="about" class="fade-up" style="padding:50px 0">
-      <h2>About Me</h2>
-
-      <div style="max-width:850px;line-height:1.8;margin-top:16px">
-        <p class="muted">
-          I'm an Informatics Engineering student with a strong passion for software development, 
-          especially in web and mobile applications. I love exploring new technologies, 
-          designing intuitive user experiences, and building solutions that make everyday life easier.  
-          I'm currently seeking an internship opportunity to enhance my technical skills and contribute 
-          to real-world projects with a proactive, creative, and growth-oriented mindset.
-        </p>
-      </div>
-
-      <div style="margin-top:60px">
-        <h3>Experience</h3>
-        <div class="grid" id="experienceGrid">
-          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2023.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2023', 'Led and coordinated promotional activities, strengthened leadership, teamwork, and communication skills.')">
-            <img src="Assets/PRJ 2023.jpeg" alt="Experience 2023">
-            <h4>PT. Madusari Nusaperdana (Kimbo) 2023</h4>
-            <p class="muted">Team Member (2023) — Led and coordinated promotional events.</p>
-          </article>
-
-          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2024.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2024', 'Led and coordinated promotional activities, strengthened leadership, teamwork, and communication skills.')">
-            <img src="Assets/PRJ 2024.jpeg" alt="Experience 2024">
-            <h4>PT. Madusari Nusaperdana (Kimbo) 2024</h4>
-            <p class="muted">Team Member (2024) — Led and coordinated promotional events.</p>
-          </article>
-
-          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2025.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2025', 'Promoted to Team Leader, managing team tasks and event coordination.')">
-            <img src="Assets/PRJ 2025.jpeg" alt="Experience 2025">
-            <h4>PT. Madusari Nusaperdana (Kimbo) 2025</h4>
-            <p class="muted">Team Leader (2025) — Managed teams and improved leadership.</p>
-          </article>
-        </div>
-      </div>
-
-      <div style="margin-top:60px">
-        <h3>Technical Skills</h3>
         <div class="skills-grid">
           <div class="skill-item fade-up">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
@@ -123,17 +71,153 @@
               <p class="muted">Figma • User-Centered Design</p>
             </div>
           </div>
-        </div>
 
+          <div class="skill-item fade-up">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" alt="Adobe Premiere Pro" />
+            <div>
+              <h4>Video Editing</h4>
+              <p class="muted">Adobe Premiere Pro</p>
+            </div>
+          </div>
+
+          <div class="skill-item fade-up">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" alt="Adobe Premiere Pro" />
+            <div>
+              <h4>Database</h4>
+              <p class="muted">Firebase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-right profile-card">
+        <img src="Assets/WhatsApp Image 2025-10-14 at 11.25.08 PM.jpeg" alt="Profil" style="border-radius:8px;margin-bottom:10px">
+        <h3>Khenichi Kuolimpo</h3>
+        <div style="display:flex;gap:50px;margin-top:12px">
+          <div style="text-align:left">
+            <div style="font-weight:700">Untarian '23</div>
+            <div class="muted">Information Technology</div>
+          </div>
+          <div style="text-align:left">
+            <div style="font-weight:700">2+</div>
+            <div class="muted">Projects</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-up" style="padding:18px 0">
+      <h2>Projects</h2>
+      <div class="grid" id="projectsGrid">
+        
+        <!-- PT. Hanica Sukses Makmur -->
+        <article class="card fade-up" 
+          data-title="Main Menu Display" 
+          data-desc="The main menu provides an overview of the company's global stock data through a clean and interactive dashboard. It features a bar chart displaying the quantities of raw materials, roll fiber, plastic cups, and recycled materials. Users can switch between different time views (e.g., weekly) to monitor stock changes over time. On the left sidebar, users can access their profile, account settings, and other navigation options. The right section summarizes current stock values, while quick-action buttons like Edit Stock and Shift allow easy management of inventory and shift data." 
+          data-img="Assets/Project1.png">
+          <div class="thumbnail">
+            <img src="Assets/Project1.png" alt="PT. Hanica Sukses Makmur">
+          </div>
+          <h4>Stock and Production Recording Application for PT. Hanica Sukses Makmur</h4>
+          <p class="muted">This application is designed to record and monitor the stock of raw materials, roll fiber, plastic cups, and recycled products in real-time. The system also automatically calculates error rates between production processes, helping to minimize mistakes and improve material management efficiency.</p>
+          <div style="display:flex;gap:8px;margin-top:10px;align-items:center;justify-content:space-between">
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JS</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Electron</span>
+            </div>
+            <div style="display:flex;gap:8px">
+              <button class="btn btn-ghost" onclick="openModal(this.closest('.card'))">View</button>
+              <a class="btn" href="https://github.com/IGALAN9/Stockflow.git" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pakanmoo -->
+        <article class="card fade-up" 
+          data-title="Loading Screen" 
+          data-desc="This screen showcases the splash design of PakanMoo, an application that helps farmers manage feeding schedules and cattle nutrition. The design features a friendly illustration of a barn and cow, creating a welcoming visual identity with the app logo centered prominently." 
+          data-img="Assets/Pakanmoo.png">
+          <div class="thumbnail">
+            <img src="Assets/Pakanmoo.png" alt="Pakanmoo">
+          </div>
+          <h4>PakanMoo - UI/UX Design for Cattle Feeding Application</h4>
+          <p class="muted">PakanMoo is a UI/UX design project for a mobile application that helps farmers efficiently manage cattle feeding schedules. The interface emphasizes simplicity and friendly visuals, featuring farm-themed elements such as barns, fences, and cows to create an engaging user experience. The design focuses on clarity and usability, making it easy for users to monitor feed portions, feeding times, and livestock conditions.</p>
+          <div style="display:flex;gap:8px;margin-top:10px;align-items:center;justify-content:space-between">
+            <div class="tags">
+              <span class="tag">Figma</span>
+            </div>
+            <div style="display:flex;gap:8px">
+              <button class="btn btn-ghost" onclick="openModal(this.closest('.card'))">View</button>
+              <a class="btn" href="https://www.figma.com/proto/1fyFyWjSS6ydeYp1JyRqkf/Untitled?node-id=10-3&starting-point-node-id=1%3A5&t=w93SWpOyYyfwSvYT-1" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about" class="fade-up" style="padding:50px 0">
+      <h2>About Me</h2>
+
+      <div style="max-width:850px;line-height:1.8;margin-top:16px">
+        <p class="muted">
+          A Information Technology student with a strong passion for software development, 
+          especially in web and mobile applications. I love exploring new technologies, 
+          designing intuitive user experiences, and building solutions that make everyday life easier.  
+          I'm currently seeking any opportunity to enhance my technical skills and contribute 
+          to real-world projects with a proactive, creative, and growth-oriented mindset.
+        </p>
+      </div>
+
+      <div style="margin-top:60px">
+        <h3>Experience</h3>
+        <div class="grid" id="experienceGrid">
+
+          <!-- PRJ 2023 Kimbo-->
+          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2023.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2023', 'Led and coordinated promotional activities, strengthened leadership, teamwork, and communication skills.')">
+            <img src="Assets/PRJ 2023.jpeg" alt="Experience 2023">
+            <h4>PT. Madusari Nusaperdana (Kimbo) 2023</h4>
+            <p class="muted">Team Member (2023) — Led and coordinated promotional events.</p>
+          </article>
+
+          <!-- PRJ 2024 Kimbo -->
+          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2024.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2024', 'Led and coordinated promotional activities, strengthened leadership, teamwork, and communication skills.')">
+            <img src="Assets/PRJ 2024.jpeg" alt="Experience 2024">
+            <h4>PT. Madusari Nusaperdana (Kimbo) 2024</h4>
+            <p class="muted">Team Member (2024) — Led and coordinated promotional events.</p>
+          </article>
+
+          <!-- PRJ 2025 Kimbo -->
+          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2025.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2025', 'Promoted to Team Leader, managing team tasks and event coordination.')">
+            <img src="Assets/PRJ 2025.jpeg" alt="Experience 2025">
+            <h4>PT. Madusari Nusaperdana (Kimbo) 2025</h4>
+            <p class="muted">Team Leader (2025) — Managed teams and improved leadership.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div style="margin-top:60px">
+        <h3>Technical Skills</h3>
+        
+
+        <!-- Skills -->
         <section id="skills" class="fade-up" style="padding:18px 0">
-          <div style="max-width:680px">
+          <div style="max-width:1250px">
             <div class="skill"><div style="display:flex;justify-content:space-between"><div>HTML • CSS • JavaScript</div><div class="muted">85%</div></div><div class="bar"><i style="width:85%"></i></div></div>
             <div class="skill"><div style="display:flex;justify-content:space-between"><div>Flutter / Dart</div><div class="muted">80%</div></div><div class="bar"><i style="width:80%"></i></div></div>
             <div class="skill"><div style="display:flex;justify-content:space-between"><div>Figma • User-Centered Design</div><div class="muted">90%</div></div><div class="bar"><i style="width:90%"></i></div></div>
+            <div class="skill"><div style="display:flex;justify-content:space-between"><div>Adobe Premier Pro</div><div class="muted">75%</div></div><div class="bar"><i style="width:75%"></i></div></div>
+            <div class="skill"><div style="display:flex;justify-content:space-between"><div>Firebase</div><div class="muted">80%</div></div><div class="bar"><i style="width:80%"></i></div></div>
           </div>
         </section>
       </div>
 
+      <!-- Soft SKills -->
       <div style="margin-top:60px">
         <h3>Soft Skills</h3>
         <ul class="soft-skill-icons fade-up">
@@ -146,6 +230,7 @@
         </ul>
       </div>
 
+      <!-- Language -->
       <div style="margin-top:60px">
         <h3>Language</h3>
         <ul class="language-skill fade-up">
@@ -216,93 +301,20 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="fade-up" style="padding:18px 0">
-      <h2>Projects</h2>
-      <div class="grid" id="projectsGrid">
-        
-        <!-- PROJECT A -->
-        <article class="card fade-up" 
-          data-title="Main Menu Display" 
-          data-desc="The main menu provides an overview of the company's global stock data through a clean and interactive dashboard. It features a bar chart displaying the quantities of raw materials, roll fiber, plastic cups, and recycled materials. Users can switch between different time views (e.g., weekly) to monitor stock changes over time. On the left sidebar, users can access their profile, account settings, and other navigation options. The right section summarizes current stock values, while quick-action buttons like Edit Stock and Shift allow easy management of inventory and shift data." 
-          data-img="Assets/Project1.png">
-
-          <div class="thumbnail">
-            <img src="Assets/Project1.png" alt="Project A">
-          </div>
-          <h4>Stock and Production Recording Application for PT. Hanica Sukses Makmur</h4>
-          <p class="muted">This application is designed to record and monitor the stock of raw materials, roll fiber, plastic cups, and recycled products in real-time. The system also automatically calculates error rates between production processes, helping to minimize mistakes and improve material management efficiency.</p>
-          <div style="display:flex;gap:8px;margin-top:10px;align-items:center;justify-content:space-between">
-            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">MongoDB</span><span class="tag">Electron</span></div>
-            <div style="display:flex;gap:8px">
-              <button class="btn btn-ghost" onclick="openModal(this.closest('.card'))">View</button>
-              <a class="btn" href="https://github.com/IGALAN9/Stockflow.git" target="_blank" rel="noopener">Repo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT B -->
-        <article class="card fade-up" 
-          data-title="Loading Screen" 
-          data-desc="This screen showcases the splash design of PakanMoo, an application that helps farmers manage feeding schedules and cattle nutrition. The design features a friendly illustration of a barn and cow, creating a welcoming visual identity with the app logo centered prominently." 
-          data-img="Assets/Pakanmoo.png">
-          
-          <div class="thumbnail">
-            <img src="Assets/Pakanmoo.png" alt="Project B">
-          </div>
-          <h4>PakanMoo - UI/UX Design for Cattle Feeding Application</h4>
-          <p class="muted">PakanMoo is a UI/UX design project for a mobile application that helps farmers efficiently manage cattle feeding schedules. The interface emphasizes simplicity and friendly visuals, featuring farm-themed elements such as barns, fences, and cows to create an engaging user experience. The design focuses on clarity and usability, making it easy for users to monitor feed portions, feeding times, and livestock conditions.</p>
-          <div style="display:flex;gap:8px;margin-top:10px;align-items:center;justify-content:space-between">
-            <div class="tags"><span class="tag">Figma</span></div>
-            <div style="display:flex;gap:8px">
-              <button class="btn btn-ghost" onclick="openModal(this.closest('.card'))">View</button>
-              <a class="btn" href="https://www.figma.com/proto/1fyFyWjSS6ydeYp1JyRqkf/Untitled?node-id=10-3&starting-point-node-id=1%3A5&t=w93SWpOyYyfwSvYT-1" target="_blank" rel="noopener">Live</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT C -->
-        <article class="card fade-up" 
-          data-title="Project C" 
-          data-desc="Lightweight backend system and API integration to support multiple client platforms." 
-          data-img="https://placehold.co/800x500?text=Project+C">
-
-          <div class="thumbnail">
-            <img src="https://placehold.co/800x500?text=Project+C" alt="Project C">
-          </div>
-          <h4>Project C</h4>
-          <p class="muted">Backend system and API integration for modern web platforms.</p>
-          <div style="display:flex;gap:8px;margin-top:10px;align-items:center;justify-content:space-between">
-            <div class="tags"><span class="tag">Node</span><span class="tag">Postgres</span></div>
-            <div style="display:flex;gap:8px">
-              <button class="btn btn-ghost" onclick="openModal(this.closest('.card'))">View</button>
-              <a class="btn" href="#">Details</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-
     <!-- Contact -->
-    <section id="contact" class="fade-up" style="padding:18px 0; margin-top: 400px; margin-bottom: 200px;">
+    <section id="contact" class="fade-up" style="padding:18px 0; margin-bottom:200px;">
       <h2>Contact</h2>
-      <form class="contact-form" onsubmit="sendMessage(event)">
-        <input class="input" name="name" placeholder="Nama" required />
-        <input class="input" name="email" type="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Pesan" required></textarea>
-        <div style="display:flex;align-items:center">
-          <button class="btn btn-primary" type="submit">Kirim</button>
-          <div style="margin-left:12px;color:#6b7280;font-size:13px">Atau email: <a href="mailto:email@khenichi.com">email@khenichi.com</a></div>
-        </div>
-      </form>
+      <div class="card" style="margin-top:16px; position:relative; padding-bottom:60px;">
+        <form action="https://formspree.io/f/myznlvyp" method="POST" class="contact-form">
+          <input class="input" name="name" placeholder="Name" required />
+          <input class="input" name="email" type="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button class="btn btn-primary" type="submit" style="position: absolute;bottom: 16px;right: 16px;width: 120px;font-size: 14px;padding: 8px 12px;">Send</button>
+        </form>
+      </div>
+      <p class="muted" style="margin-top:12px; font-size:13px;">You can also contact me directly via email: khenichi.k@gmail.com</p>
     </section>
   </main>
-
-  <footer>
-    <div class="container">© <span id="year"></span> Khenichi Kuolimpo — Built with ♥</div>
-  </footer>
 
   <!-- Modal Experience -->
   <div id="imageModal" class="modal" role="dialog" aria-hidden="true">
@@ -323,7 +335,6 @@
       <p id="modalDesc" class="muted"></p>
     </div>
   </div>
-
 
   <script src="script.js"></script>
 </body>
