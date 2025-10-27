@@ -16,22 +16,54 @@ themeToggle.addEventListener('click', () => {
 });
 
 /* Modal (Projects) */
+let currentSlide = 0;
+
 function openModal(card) {
-  const modal = document.getElementById('modal');
-  document.getElementById('modalTitle').textContent = card.dataset.title || '';
-  document.getElementById('modalDesc').textContent = card.dataset.desc || '';
-  document.getElementById('modalImg').src = card.dataset.img || '';
-  modal.classList.add('open');
-  modal.setAttribute('aria-hidden', 'false');
+  const title = card.dataset.title;
+  const desc = card.dataset.desc;
+  const imgs = card.dataset.img.split(','); // bisa lebih dari 1 gambar
+
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalDesc').textContent = desc;
+
+  const carouselInner = document.getElementById('carouselInner');
+  carouselInner.innerHTML = ''; // hapus isi sebelumnya
+
+  imgs.forEach(src => {
+    const img = document.createElement('img');
+    img.src = src.trim();
+    img.style.display = 'none'; // semua disembunyikan dulu
+    carouselInner.appendChild(img);
+  });
+
+  currentSlide = 0;
+  updateCarousel();
+
+  document.getElementById('modal').style.display = 'flex';
 }
+
 function closeModal() {
-  const modal = document.getElementById('modal');
-  modal.classList.remove('open');
-  modal.setAttribute('aria-hidden', 'true');
+  document.getElementById('modal').style.display = 'none';
 }
-document.getElementById('modal').addEventListener('click', e => {
-  if (e.target === e.currentTarget) closeModal();
-});
+
+function changeSlide(n) {
+  const imgs = document.querySelectorAll('#carouselInner img');
+  currentSlide = (currentSlide + n + imgs.length) % imgs.length;
+  updateCarousel();
+}
+
+function updateCarousel() {
+  const imgs = document.querySelectorAll('#carouselInner img');
+  imgs.forEach((img, i) => {
+    img.style.display = i === currentSlide ? 'block' : 'none';
+  });
+}
+
+// Tutup modal kalau klik di luar
+window.onclick = function(e) {
+  const modal = document.getElementById('modal');
+  if (e.target === modal) closeModal();
+}
 
 /* Modal (Experience) */
 function openImageModal(src, title, desc) {

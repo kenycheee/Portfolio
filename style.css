@@ -428,25 +428,58 @@ body.dark .lang-level span.filled {
 
 /* Modal */
 .modal {
+  display: none;
   position: fixed;
   inset: 0;
-  display: none;
-  align-items: center;
+  background: rgba(0,0,0,0.6);
   justify-content: center;
-  background: rgba(2,6,23,0.6);
-  z-index: 60;
+  align-items: center;
+  z-index: 999;
 }
-
-.modal.open {
-  display: flex;
-}
-
 .modal-card {
-  width: min(900px,96%);
-  background: white;
-  border-radius: 12px;
+  background: #f9fffd;
   padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
 }
+.close-btn {
+  float: right;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+.carousel-inner img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 360px;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+.prev { left: 8px; }
+.next { right: 8px; }
 
 body.dark .modal-card {
   background: #071225;
