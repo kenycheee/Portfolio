@@ -59,28 +59,36 @@ function updateCarousel() {
   });
 }
 
-// Tutup modal kalau klik di luar
 window.onclick = function(e) {
   const modal = document.getElementById('modal');
   if (e.target === modal) closeModal();
 }
 
 /* Modal (Experience) */
-function openImageModal(src, title, desc) {
-  const modal = document.getElementById('imageModal');
-  document.getElementById('modalImage').src = src;
-  document.getElementById('imageTitle').textContent = title;
-  document.getElementById('imageDesc').textContent = desc;
-  modal.classList.add('open');
-  modal.setAttribute('aria-hidden', 'false');
+function openImageModal(imgSrc, title, desc) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const modalTitle = document.getElementById("imageTitle");
+  const modalDesc = document.getElementById("imageDesc");
+
+  modal.style.display = "flex";
+  modalImg.src = imgSrc;
+  modalTitle.textContent = title;
+  modalDesc.textContent = desc;
+  modal.setAttribute("aria-hidden", "false");
 }
+
 function closeImageModal() {
-  const modal = document.getElementById('imageModal');
-  modal.classList.remove('open');
-  modal.setAttribute('aria-hidden', 'true');
+  const modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+  modal.setAttribute("aria-hidden", "true");
 }
-document.getElementById('imageModal').addEventListener('click', e => {
-  if (e.target === e.currentTarget) closeImageModal();
+
+window.addEventListener("click", function(e) {
+  const modal = document.getElementById("imageModal");
+  if (e.target === modal) {
+    closeImageModal();
+  }
 });
 
 /* Typing animation (Name) */
@@ -112,29 +120,6 @@ document.getElementById('imageModal').addEventListener('click', e => {
   el.textContent = '';
   el.classList.add('typing');
   tick();
-})();
-
-/* Role Loop Animation */
-(function roleLooper() {
-  const roles = ['Web Development', 'Mobile Development', 'UI/UX Designer'];
-  const el = document.getElementById('role');
-  let idx = 0;
-
-  el.textContent = roles[0];
-  el.style.transition = 'opacity .45s ease, transform .45s ease';
-
-  function swap() {
-    el.style.opacity = 0;
-    el.style.transform = 'translateY(6px)';
-    setTimeout(() => {
-      idx = (idx + 1) % roles.length;
-      el.textContent = roles[idx];
-      el.style.opacity = 1;
-      el.style.transform = 'translateY(0)';
-    }, 420);
-  }
-
-  setInterval(swap, 3000);
 })();
 
 /* Skills Bar Animation */

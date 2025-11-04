@@ -200,25 +200,51 @@
         <h3>Experience</h3>
         <div class="grid" id="experienceGrid">
 
-          <!-- PRJ 2023 Kimbo-->
-          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2023.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2023', 'Led and coordinated promotional activities, strengthened leadership, teamwork, and communication skills.')">
+          <!-- PRJ 2023 Kimbo -->
+          <article class="card fade-up" 
+            onclick="openImageModal(
+              'Assets/PRJ 2023.jpeg', 
+              'PT. Madusari Nusaperdana (Kimbo) — PRJ 2023', 
+              'Participated in the Jakarta Fair (PRJ) 2023 as part of the Kimbo promotional team. Engaged visitors through live demonstrations, assisted with sampling activities, and supported brand awareness efforts while developing strong teamwork and communication skills.'
+            )">
             <img src="Assets/PRJ 2023.jpeg" alt="Experience 2023">
-            <h4>PT. Madusari Nusaperdana (Kimbo) 2023</h4>
-            <p class="muted">Team Member (2023) — Led and coordinated promotional events.</p>
+            <h4>PT. Madusari Nusaperdana (Kimbo) — PRJ 2023</h4>
+            <p class="muted">PRJ Team Member (2023) — Supported brand promotion and product sampling.</p>
           </article>
 
           <!-- PRJ 2024 Kimbo -->
-          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2024.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2024', 'Led and coordinated promotional activities, strengthened leadership, teamwork, and communication skills.')">
+          <article class="card fade-up" 
+            onclick="openImageModal(
+              'Assets/PRJ 2024.jpeg', 
+              'PT. Madusari Nusaperdana (Kimbo) — PRJ 2024', 
+              'Returned to the Jakarta Fair (PRJ) 2024 as a senior team member, taking on a more active role in organizing booth operations and coordinating with the event management team. Enhanced leadership, adaptability, and customer engagement strategies.'
+            )">
             <img src="Assets/PRJ 2024.jpeg" alt="Experience 2024">
-            <h4>PT. Madusari Nusaperdana (Kimbo) 2024</h4>
-            <p class="muted">Team Member (2024) — Led and coordinated promotional events.</p>
+            <h4>PT. Madusari Nusaperdana (Kimbo) — PRJ 2024</h4>
+            <p class="muted">PRJ Senior Team Member (2024) — Assisted in booth management and coordination.</p>
           </article>
 
           <!-- PRJ 2025 Kimbo -->
-          <article class="card fade-up" onclick="openImageModal('Assets/PRJ 2025.jpeg', 'PT. Madusari Nusaperdana (Kimbo) 2025', 'Promoted to Team Leader, managing team tasks and event coordination.')">
+          <article class="card fade-up" 
+            onclick="openImageModal(
+              'Assets/PRJ 2025.jpeg', 
+              'PT. Madusari Nusaperdana (Kimbo) — PRJ 2025', 
+              'Promoted to Team Leader for Kimbo’s participation in PRJ 2025. Managed daily team schedules, ensured smooth booth operations, and maintained high engagement with visitors through promotional activities and games, strengthening leadership and organizational skills.'
+            )">
             <img src="Assets/PRJ 2025.jpeg" alt="Experience 2025">
-            <h4>PT. Madusari Nusaperdana (Kimbo) 2025</h4>
-            <p class="muted">Team Leader (2025) — Managed teams and improved leadership.</p>
+            <h4>PT. Madusari Nusaperdana (Kimbo) — PRJ 2025</h4>
+            <p class="muted">PRJ Team Leader (2025) — Supervised team performance and event execution.</p>
+          </article>
+
+          <article class="card fade-up"
+            onclick="openImageModal(
+              'Assets/meo.jpg', 
+              'PT. Perfect Companion Indonesia (PCG) — IIPE Event 2025', 
+              'Represented PT. Perfect Companion Indonesia during the IIPE 2025 event, promoting Me-O and SmartHeart products. Served as a sales representative and booth attendant, engaging visitors through interactive games and product demonstrations to enhance brand awareness and customer experience.'
+            )">
+            <img src="Assets/meo.jpg" alt="Experience 2025">
+            <h4>PT. Perfect Companion Indonesia (PCG) — IIPE 2025</h4>
+            <p class="muted">Sales Representative & Booth Attendant — Promoted Me-O and SmartHeart products at the IIPE 2025 event.</p>
           </article>
         </div>
       </div>
@@ -340,12 +366,12 @@
   </main>
 
   <!-- Modal Experience -->
-  <div id="imageModal" class="modal" role="dialog" aria-hidden="true">
-    <div class="modal-card" style="max-width:800px;text-align:center">
-      <button onclick="closeImageModal()" style="float:right;border:0;background:transparent;font-size:18px">✕</button>
+  <div id="imageModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <span class="close" onclick="closeImageModal()">×</span>
+      <img id="modalImage" src="" alt="">
       <h3 id="imageTitle"></h3>
-      <img id="modalImage" src="" alt="Experience" style="border-radius:10px;margin:14px 0;max-height:420px;width:100%;object-fit:contain">
-      <p id="imageDesc" class="muted" style="margin-top:8px"></p>
+      <p id="imageDesc"></p>
     </div>
   </div>
 
